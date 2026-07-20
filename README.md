@@ -2,7 +2,7 @@
 
 Personal portfolio site built with Next.js 14, TypeScript, and Tailwind CSS. Showcases my work in software development, data analytics, and my capstone project (AIFMS).
 
-🔗 **Live site:** [add your deployed URL here]
+🔗 **Live site:** 
 
 ## Tech stack
 
@@ -20,7 +20,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view it locally.
 
-## Project structure
+<!-- ## Project structure
 src/
 ├── app/ # Root layout and page
 ├── components/
@@ -42,7 +42,7 @@ All page content lives in `src/data/`, so adding a new project or experience ent
 
 ## Deploying
 
-Push to GitHub, then import the repo at [vercel.com](https://vercel.com) — zero config needed for a standard Next.js app.
+Push to GitHub, then import the repo at [vercel.com](https://vercel.com) — zero config needed for a standard Next.js app. -->
 
 ## Author
 
