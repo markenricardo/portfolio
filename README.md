@@ -1,6 +1,15 @@
 # Marken Ricardo — Portfolio
 
-Next.js 14 + Tailwind CSS portfolio site, scaffolded from the design mockups.
+Personal portfolio site built with Next.js 14, TypeScript, and Tailwind CSS. Showcases my work in software development, data analytics, and my capstone project (AIFMS).
+
+🔗 **Live site:** [add your deployed URL here]
+
+## Tech stack
+
+- [Next.js 14](https://nextjs.org/) (App Router)
+- TypeScript
+- Tailwind CSS
+- [lucide-react](https://lucide.dev/) for icons
 
 ## Getting started
 
@@ -9,27 +18,34 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000
+Open [http://localhost:3000](http://localhost:3000) to view it locally.
 
-## Before you deploy
+## Project structure
+src/
+├── app/ # Root layout and page
+├── components/
+│ ├── layout/ # Navbar, Footer
+│ ├── sections/ # Hero, About, Experience, Projects, Skills, Education, Contact
+│ └── ui/ # Reusable UI primitives (Button, Badge, Card, etc.)
+├── data/ # Content — projects, experience, skills
+├── lib/ # Utility functions
+└── types/ # Shared TypeScript types
 
-1. **Contact form** — replace `FORM_ENDPOINT` in `src/components/sections/Contact.tsx`
-   with your real Formspree form ID (formspree.io) or swap it for a Resend API route.
-2. **GitHub link** — replace the placeholder `#` link in `Contact.tsx` with your real GitHub URL.
-3. **Project images** — drop real screenshots into `public/images/projects/` and update
-   `ProjectCard.tsx` to render an `<Image>` instead of the placeholder box.
-4. **Resume PDF** — add `resume.pdf` to `public/` if you want a download link.
-5. **Favicon** — replace `public/favicon.ico`.
+All page content lives in `src/data/`, so adding a new project or experience entry doesn't require touching any component code — just add an object to the relevant array.
 
-## Editing content
+## Known TODOs
 
-All real content lives in `src/data/`:
-- `projects.ts` — your project list
-- `experience.ts` — your two internships
-- `skills.ts` — grouped skill lists
-
-Add a new project by adding an object to the `projects` array — no component code needs to change.
+- [ ] Add real project screenshots to `public/images/projects/` and swap the placeholder preview box in `ProjectCard.tsx` for an `<Image>`
+- [ ] Wire up `public/images/hero-photo.png` in `Hero.tsx` (currently showing initials placeholder)
+- [ ] Replace the `#` GitHub link placeholders in `Hero.tsx` and `Contact.tsx` with my actual GitHub profile URL
+- [ ] Add a custom favicon
 
 ## Deploying
 
-Push to GitHub, then import the repo at vercel.com. Zero config needed.
+Push to GitHub, then import the repo at [vercel.com](https://vercel.com) — zero config needed for a standard Next.js app.
+
+## Author
+
+**Marken Ricardo**
+BS Computer Engineering (Big Data Analytics) — Polytechnic University of the Philippines
+📧 markenricardoo@gmail.com · [LinkedIn](http://www.linkedin.com/in/markenricardo)
