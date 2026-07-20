@@ -1,6 +1,6 @@
 # Marken Ricardo — Portfolio
 
-Personal portfolio site built with Next.js 14, TypeScript, and Tailwind CSS. Showcases my work in software development, data analytics, and my capstone project (AIFMS).
+Personal portfolio site built with Next.js 14, TypeScript, and Tailwind CSS.
 
 🔗 **Live site:** 
 
