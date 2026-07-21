@@ -2,6 +2,7 @@ import { Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -67,8 +68,18 @@ export function Hero() {
         </div>
 
         <div className="flex flex-col items-center gap-3 justify-self-center">
-          <div className="w-40 h-40 rounded-full bg-teal-deep flex items-center justify-center">
+          {/* <div className="w-40 h-40 rounded-full bg-teal-deep flex items-center justify-center">
             <span className="text-4xl font-semibold text-teal">MR</span>
+          </div> */}
+          <div className="w-100 h-100 rounded-full overflow-hidden bg-teal-deep">
+            <Image
+              src="/images/face.jpg"
+              alt="Marken Ricardo"
+              width={200}
+              height={200}
+              priority
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex gap-2 flex-wrap justify-center max-w-[200px]">
             <Badge variant="dark">Python</Badge>
