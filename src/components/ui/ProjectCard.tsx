@@ -1,12 +1,30 @@
+import * as Icons from "lucide-react";
 import { Project } from "@/types";
 import { Badge } from "./Badge";
 import { cn } from "@/lib/utils";
 
-export function ProjectCard({ project }: { project: Project }) {
+const iconMap: Record<string, keyof typeof Icons> = {
+  "ti-mood-smile": "Smile",
+  "ti-chart-bar": "BarChart3",
+  "ti-clock": "Clock",
+  "ti-database": "Database",
+  "ti-bolt": "Zap",
+};
+
+interface ProjectCardProps {
+  project: Project;
+  onClick?: () => void;
+}
+
+export function ProjectCard({ project, onClick }: ProjectCardProps) {
+  const iconKey = project.icon ? iconMap[project.icon] : undefined;
+  const Icon = iconKey ? (Icons[iconKey] as Icons.LucideIcon) : Icons.Folder;
+
   return (
-    <div
+    <button
+      onClick={onClick}
       className={cn(
-        "bg-white border border-black/10 rounded-card overflow-hidden",
+        "text-left w-full bg-white border border-black/10 rounded-card overflow-hidden hover:border-teal/50 transition-colors",
         project.featured && "sm:col-span-2"
       )}
     >
@@ -16,8 +34,7 @@ export function ProjectCard({ project }: { project: Project }) {
           project.featured ? "h-28" : "h-24"
         )}
       >
-        {/* Swap for an <Image> once real screenshots are ready */}
-        <span className="text-xs text-ink-muted">preview</span>
+        <Icon size={26} />
       </div>
       <div className="p-4">
         <p className="font-medium text-sm text-ink mb-1">{project.title}</p>
@@ -30,6 +47,6 @@ export function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
       </div>
-    </div>
+    </button>
   );
 }

@@ -7,6 +7,10 @@ export interface Project {
   image?: string;
   link?: string;
   repo?: string;
+  icon?: string;
+  outcome?: string;
+  details?: string[];
+  features?: string[];
 }
 
 export interface Experience {
