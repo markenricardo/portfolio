@@ -21,7 +21,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
       />
 
       {/* sheet */}
-      <div className="relative w-full max-w-md h-full bg-charcoal overflow-y-auto animate-sheet-in">
+      <div className="relative w-full max-w-xl h-full bg-charcoal overflow-y-auto animate-sheet-in">
         <div className="flex items-start justify-between px-6 pt-6 pb-4">
           <p className="font-medium text-base text-paper pr-6">
             {project.title}
