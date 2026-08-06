@@ -81,11 +81,11 @@ export function Hero() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="flex gap-2 flex-wrap justify-center max-w-[200px]">
+          {/* <div className="flex gap-2 flex-wrap justify-center max-w-[200px]">
             <Badge variant="dark">Python</Badge>
             <Badge variant="dark">React</Badge>
             <Badge variant="dark">SQL</Badge>
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>
