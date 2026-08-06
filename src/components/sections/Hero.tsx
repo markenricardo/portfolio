@@ -73,7 +73,7 @@ export function Hero() {
           </div> */}
           <div className="w-100 h-100 rounded-full overflow-hidden bg-teal-deep">
             <Image
-              src="/images/face.jpg"
+              src="/images/grad.jpg"
               alt="Marken Ricardo"
               width={200}
               height={200}
