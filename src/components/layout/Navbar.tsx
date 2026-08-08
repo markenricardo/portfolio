@@ -11,7 +11,7 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-charcoal">
       <div className="h-16 flex justify-between items-center px-6 sm:px-8">
-        <span className="text-paper font-medium">Marken Ricardo</span>
+        <span className="text-paper font-medium">_kennyrih</span>
 
         <div className="hidden sm:flex gap-6 text-sm text-teal">
           {links.map((link) => (
